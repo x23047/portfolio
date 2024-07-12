@@ -1,3 +1,248 @@
-h2{
-    color: blue;
+
+*, *::before, *::after {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
+  
+ 
+:root { 
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3", Hiragino Kaku Gothic ProN, Arial, "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, sans-serif;
+   
+    font-feature-settings: "palt";
+    font-size: 14pt;
+    
+}
+  
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    flex-direction: column;
+    
+}
+header h2{
+    color: white;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    margin-top: 20px;
+    color: white;
+    right: 0;
+}
+header ul li a {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+header ul li a:hover,header ul li a:active {
+    color: white;
+    background-color: orange;
+}
+
+@media (min-width: 769px) {
+
+    header h1 {
+      content: none;
+      height: 100px;
+    }
+    header h1::after {
+      content: none;
+    }
+    header ul {
+      margin-top: 0;
+      height: 100%;
+    }
+    header li {
+      display: flex;
+      align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+#myself {
+    background-image: url("background.jpg");  
+    background-size: cover; 
+    
+    background-position: center center; 
+    
+    display: grid; 
+    place-items: center; 
+  
+    min-height: 100vh;
+    --text-color: #f0f0f0;
+    color: var(--text-color);
+}
+#myself{
+    display: grid; 
+    grid-template: "photo   name   " auto
+                   "photo   texts  " auto
+                   "photo   social " auto
+                   / 300px minmax(300px, 450px);
+    gap: 0 2rem;  
+  
+    padding: 2rem;  
+    max-width: 100%; 
+    backdrop-filter: blur(20px); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    border-right-color: rgba(255, 255, 255, 0.2); 
+    border-bottom-color: rgba(255, 255, 255, 0.2);  
+    border-radius: 8px; 
+  }
+  
+
+@media screen and (width < 896px) { 
+    main {
+
+      grid-template: "photo  " auto
+                     "name   " auto
+                     "texts  " auto
+                     "social " auto
+                     / auto;
+      gap: 1rem 0;  
+      margin: 4rem 0;
+    }
+}
+.my-photo {
+    grid-area: photo;
+    align-self: center;
+}
+.my-photo img {
+    display: block; 
+    width: 300px;
+    height: 300px; 
+    border-radius: 150px; 
+}
+  
+ 
+@media screen and (width < 896px) { 
+    .my-photo img {
+      width: 70vw;
+      height: 70vw; 
+    }
+}
+  
+.my-name {
+    grid-area: name; 
+    font-size: 4rem; 
+    text-shadow: -1px 1px 0 #232323; 
+    letter-spacing: 0.1em; 
+}
+ 
+@media screen and (width < 896px) {
+    .my-name {
+      font-size: 13vw; 
+      text-align: center; 
+    }
+}
+  
+.my-texts {
+    grid-area: texts; 
+}
+  
+.my-social {
+    grid-area: social;  
+    list-style: none; 
+    display: flex; 
+    margin-top: 1.5rem;
+}
+.my-social li {
+    line-height: 1; 
+    margin-right: 1rem; 
+    font-size: 2rem; 
+}
+  
+.my-social li a {
+    display: inline-block; 
+    text-decoration: none; 
+    color: var(--text-color);  
+    cursor: pointer; 
+
+    transition: 0.5s transform, 0.5s color;
+  
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+  
+  
+.my-social li a:hover {
+    color: transparent; 
+    transform: scale(1.5); 
+}
+  
+  
+#myself{
+    width: 100%;  
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+  
+    z-index: -1; 
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    opacity: 0.5;
+}
+  
+.my-photo figure {
+    position: relative; 
+}
+.circle1,
+.circle2,
+.circle3 {
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; 
+    z-index: -1;
+}
+  
+  
+@keyframes rotation {
+    from {  
+      transform: rotate(0deg);  
+    }
+  
+    to {  
+      transform: rotate(360deg); 
+    }
+}
+  
+.circle1 {
+    opacity: 0.1; 
+    background: #0af; 
+    transform-origin: 50% 47%;  
+    animation: rotation 5s infinite linear; 
+}
+  
+.circle2 {
+    opacity: 0.3;
+    background: #ff0;
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+  
+.circle3 {
+    opacity: 0.2;
+    background: #fa0;
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+  
