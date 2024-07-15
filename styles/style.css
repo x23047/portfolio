@@ -26,8 +26,9 @@ header{
     
 }
 header h2{
-    color: white;
+    color: whitehb ;
 }
+
 header ul{
     list-style: none;
     display: flex;
@@ -35,7 +36,6 @@ header ul{
     justify-self: center;
     margin-top: 20px;
     color: white;
-    right: 0;
 }
 header ul li a {
     display: inline-block;
@@ -141,9 +141,10 @@ header ul li a:hover,header ul li a:active {
   
 .my-name {
     grid-area: name; 
-    font-size: 4rem; 
+    font-size: 3rem; 
     text-shadow: -1px 1px 0 #232323; 
     letter-spacing: 0.1em; 
+    color: black;
 }
  
 @media screen and (width < 896px) {
@@ -155,6 +156,7 @@ header ul li a:hover,header ul li a:active {
   
 .my-texts {
     grid-area: texts; 
+    color: black;
 }
   
 .my-social {
@@ -245,4 +247,15 @@ header ul li a:hover,header ul li a:active {
     transform-origin: 48% 52%;
     animation: rotation 8s infinite linear;
 }
+
+
+
   
+.MAYA-work{
+    display: flex;
+}
+.MAYA-work img{
+    width:640px;
+    margin: 0;
+    padding: 0;
+}
