@@ -248,14 +248,25 @@ header ul li a:hover,header ul li a:active {
     animation: rotation 8s infinite linear;
 }
 
-
-
   
-.MAYA-work{
+.MAYA-work1{
     display: flex;
 }
-.MAYA-work img{
+.MAYA-work1 img{
     width:640px;
+    height: 460px;
     margin: 0;
     padding: 0;
+}
+.MAYA-work1 p{
+    padding-left: 60px;
+    line-height: 2cm;
+    border: solid 2px black;
+}
+.MAYA-work2 ul{
+    display: flex;
+}
+.MAYA-work2 img{
+    width: 100%;
+    height: 400px;
 }
