@@ -22,7 +22,7 @@ header{
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: black;
+    background-color:rgb(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     z-index: 999;
@@ -304,6 +304,10 @@ header ul li a:hover,header ul li a:active {
 .MAYA-work1 p{
     line-height: 2cm;
 }
+.MAYA-work1 strong{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+}
 .MAYA-work2 .MAYA-work2-p ul{
     display: flex;
     list-style: none;
@@ -331,6 +335,10 @@ header ul li a:hover,header ul li a:active {
 .MAYA-work2 .MAYA-work2-comm p{
     line-height: 2cm;
 }
+.MAYA-work2-comm strong{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+}
 
 .MAYA-work3{
     display: flex;
@@ -353,6 +361,10 @@ header ul li a:hover,header ul li a:active {
 }
 .MAYA-work3 p{
     line-height: 2cm;
+}
+.MAYA-work3 strong{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
 }
 
 .cp h3{
@@ -382,7 +394,10 @@ header ul li a:hover,header ul li a:active {
 .cp-work1 .cp-comm p{
     line-height: 2cm;
 }
-
+.cp-comm strong{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+}
 .HTML h3{
     font-size: 70px;
     color: #a9e0ee;
@@ -408,9 +423,14 @@ header ul li a:hover,header ul li a:active {
     background-color: white;
     margin: 50px;
     padding: 50px;
+    text-align: center;
 }
 .HTML-work .work-comm p{
     line-height: 2cm;
+}
+.work-comm strong{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
 }
 #skill{
     height: 700px;
@@ -437,4 +457,47 @@ header ul li a:hover,header ul li a:active {
     line-height: 1cm;
     font-size: 3vw;
     background-color: white;
+}
+
+#end h2{
+    font-size: 70px;
+    color: white;
+    background-color: #1b2421;
+    text-shadow:#000000 3px 3px 5px;
+    width: 100%;
+    height: 90px;
+}
+#end h4{
+    font-size: 50px;
+    margin: 180px;
+    background-color: rgb(143, 202, 231);
+    padding: 100px;
+}
+
+footer{
+    width: 100%;   
+    display: flex;
+    height: 50px;
+    background-color: rgb(191, 244, 168);
+    justify-content: center;
+    
+    position: relative;
+}
+footer h3{
+    padding: 10px;
+}
+
+footer li{
+    padding: 10px;
+    position: absolute;
+    list-style: none;
+    right: 0;
+    background-color: rgb(58, 124, 29);
+    border-radius: 15px;
+    
+}
+footer a{
+    
+    color: white;
+    text-decoration: none;
 }
