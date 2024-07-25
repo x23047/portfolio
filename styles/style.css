@@ -291,6 +291,7 @@ header ul li a:hover,header ul li a:active {
     width:640px;
     height: 460px;
     margin: 20px;
+    
     padding: 0;
 }
 .MAYA-work1 ul{
@@ -320,6 +321,7 @@ header ul li a:hover,header ul li a:active {
 .MAYA-work2 img{
     width: 400px;
     height: 400px;
+    margin: 20px;
 }
 
 .MAYA-work2 .MAYA-work2-comm ul{
